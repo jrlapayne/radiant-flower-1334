@@ -10,6 +10,7 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
     <script src="http://connect.facebook.net/en_US/all.js"></script>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "custom", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
@@ -29,23 +30,23 @@
 				</div>
 			</div>
 		</div>
-		<ul data-role = "listview" data-theme = "h">
-			<li class = "separator">Socialize</li>
-			<li><a href = "#">Profile</a></li>
+		<ul data-role = "listview" data-theme = "h" data-divider-theme = "g">
+			<li data-role = "list-divider">Socialize</li>
+			<li data-icon = "star"><a href = "#"><img src="assets/fail2.png" width = "24" height = "24" class="ui-li-icon" style = "margin: -0.25em 0 0 0">Profile</a></li>
 		</ul>
-		<ul data-role = "listview" data-theme = "i">
-			<li class = "separator">Explore</li>
-			<li><a href = "#">Browse</a></li>
-			<li><a href = "#">Suggest Topic</a></li>
-			<li><a href = "#">Edit</a></li>
+		<ul data-role = "listview" data-theme = "h" data-divider-theme = "g">
+			<li data-role = "list-divider">Explore</li>
+			<li data-icon = "search"><a href = "#">Browse</a></li>
+			<li data-icon = "gear"><a href = "#">Suggest Topic</a></li>
+			<li data-icon = "alert"><a href = "#">Edit</a></li>
 		</ul>
-		<ul data-role = "listview" data-theme = "g">
-			<li class = "separator">Achieve</li>
+		<ul data-role = "listview" data-theme = "h" data-divider-theme = "g">
+			<li data-role = "list-divider">Achieve</li>
 		</ul>
-		<ul data-role = "listview" data-theme = "j">
-			<li class = "separator">Extras</li>
-			<li><a href = "#">Store</a></li>
-			<li><a href = "#">About</a></li>
+		<ul data-role = "listview" data-theme = "h" data-divider-theme = "g">
+			<li data-role = "list-divider">Extras</li>
+			<li data-icon = "home"><a href = "#">Store</a></li>
+			<li data-icon = "info"><a href = "#">About</a></li>
 		</ul>
 	</div>
 	

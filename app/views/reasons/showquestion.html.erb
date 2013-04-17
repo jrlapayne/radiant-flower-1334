@@ -11,11 +11,18 @@
 	<div class = "content">
 		<p style = "text-align: center; font-size: 1.1em; line-height: 135%; margin: 1em"><%= @reason.question %></p>
 	</div>
-	
+	<% points = 1000 %>
 	<div class = "ui-grid-b">
 		<div class = "ui-block-a"></div>
 		<div class = "ui-block-b">
 			<div>
+				<div class='meter-wrap' id='meter-ex1' style='cursor: pointer'>
+				    <div class='meter-value' style='background-color: #ff0000; width: 100%;'>
+				        <div class='meter-text'>
+								<%= points %>
+				        </div>
+				    </div>
+				</div>
 				<a href = "#reasoninfo" data-role = "button" style = "margin: 1em -5em 1em -5em" data-theme = "k" data-icon = "info">Not Sure?</a>
 			</div>
 		</div>
